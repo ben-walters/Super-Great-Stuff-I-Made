@@ -15,6 +15,10 @@ function lbgo(url) {
 	$('.lb-inner').load(url + ext, function() {
 		$('.lb-screen').fadeIn(300);
 		bindForms();
+		//bind to click
+		$('.lb-close').click(function() {
+			lbclose();
+		});
 	});
 }
 //close
@@ -27,10 +31,6 @@ function lbclose() {
 $(document).keyup(function(e) {
 	e.preventDefault();
 if (e.keyCode == 27) { lbclose() } // esc
-});
-//bind to click
-$('.lb-close').click(function() {
-	lbclose();
 });
 //manage changes
 function lbchange(content) {
@@ -51,8 +51,4 @@ $('a[data-lb="true"]').each(function(k,v) {
 		e.preventDefault();
 		lbgo($(this).attr('href'));
 	});
-});
-
-$('#trigger').click(function() {
-  lbgo('http://codepen.io');
 });
