@@ -11,6 +11,7 @@ function lbgo(url) {
 	} else {
 		var ext = '?SQ_DESIGN_NAME=blank&SQ_LAYOUT_NAME=blank'
 	}
+	if(url.indexOf('SQ_LAYOUT_NAME')<0) ext += '&SQ_LAYOUT_NAME=blank';
 	$("html, body").animate({ scrollTop: 0 }, 300);
 	$('.lb-inner').load(url + ext, function() {
 		$('.lb-screen').fadeIn(300);
