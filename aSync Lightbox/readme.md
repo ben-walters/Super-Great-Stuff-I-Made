@@ -3,14 +3,14 @@
 see it in action! http://codepen.io/ben-walters/pen/Fcgwj
 
 ## Requires
-jQuery 1.7+ http://jquery.com/  return
-Ajax form   *included in folder*  return
+jQuery 1.7+ http://jquery.com/  <br>
+Ajax form   *included in folder*    <br>
 
 ## Usage
-**js functions**  return
-lbgo('url to load');  return
-lbchange('url to load');  return
-lbclose();  return
+**js functions**    <br>
+lbgo('url to load');    <br>
+lbchange('url to load');    <br>
+lbclose();    <br>
 
 ## Notes
 * Will only support same-domain requests
