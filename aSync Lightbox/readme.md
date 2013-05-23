@@ -1,6 +1,7 @@
 # This is an sync lightbox script.
 
-see it in action! http://codepen.io/ben-walters/pen/Fcgwj
+see it in action! http://codepen.io/ben-walters/pen/Fcgwj <br>
+**note** The aSync doesnt work due to codepens magic<br>
 
 ## Requires
 jQuery 1.7+ http://jquery.com/  <br>
