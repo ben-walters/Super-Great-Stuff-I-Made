@@ -15,3 +15,4 @@ lbclose();    <br>
 ## Notes
 * Will only support same-domain requests
 * Uses ajax form to bind loaded forms and reload response to same lightbox window via lbchange();
+* packaged.min.js contains *both* ajaxForm **and** lightbox.js minified
