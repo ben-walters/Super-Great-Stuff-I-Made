@@ -1,6 +1,9 @@
-/* ============================================= *
-* Lightbox Scripts
-* ============================================= */
+/* Ben Walters
+* aSync Lightbox
+*
+* Author: bwalters@squiz.co.uk
+* Created: 23 May 2013 15:29
+*/
 //create async lightbox
 function lbgo(url) {
 	if(url.indexOf('?')>-1) {
