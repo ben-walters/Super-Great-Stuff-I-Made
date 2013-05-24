@@ -13,7 +13,7 @@ $('.inline-comment').each(function(k,v) {
 
 
 $('.inline-comment-add button').click(function(e) {
-
+  var theBox = $(this).parent().parent();
 
   var name = $(this).parent().parent().find('a').attr('href').replace('#','');
   var text = $(this).parent().find('textarea').val();
@@ -31,6 +31,8 @@ js_api.createAsset({
    "attributes":"comment=" + text ,
    "dataCallback": function(data) {
      console.log(data);
+       theBox.find('.inline-comments-area').load('http://presales.squiz.co.uk/presales/comments/get-comments/_nocache?queries_comment_query=' + name + '&search_page_1195_submit_button=Submit&current_result_page=1&results_per_page=0&submitted_search_category=&mode=&root=' + JSAPI_curId);
+       theBox.find('textarea').val('')
    }
 });
 
