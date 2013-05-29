@@ -1,11 +1,11 @@
 var options = new Array();
-options['key'] = '7921508331';
+options['key'] = '';
 var js_api = new Squiz_Matrix_API(options);
 
 $('.inline-comment').each(function (k, v) {
     var id = $(this).find('a').attr('href').replace('#', '');
     $(this).append('<div class="inline-comment-add"><textarea class="inline-comment-text"></textarea><button>Add</button><div class="inline-comments-area"></div></div>');
-    $(this).find('.inline-comments-area').load('http://presales.squiz.co.uk/presales/comments/get-comments/_nocache?queries_comment_query=' + id + '&search_page_1195_submit_button=Submit&current_result_page=1&results_per_page=0&submitted_search_category=&mode=&root=' + JSAPI_curId);
+    $(this).find('.inline-comments-area').load('/presales/comments/get-comments/_nocache?queries_comment_query=' + id + '&search_page_1195_submit_button=Submit&current_result_page=1&results_per_page=0&submitted_search_category=&mode=&root=' + JSAPI_curId);
 });
 
 
